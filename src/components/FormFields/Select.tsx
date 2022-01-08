@@ -89,8 +89,15 @@ export const Select = ({
   );
 };
 
+Select.defaultProps = {
+  error: null,
+};
+
 Select.propTypes = {
   label: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
+  value: PropTypes.string.isRequired,
+  onValueChange: PropTypes.func.isRequired,
+  error: PropTypes.string,
 };

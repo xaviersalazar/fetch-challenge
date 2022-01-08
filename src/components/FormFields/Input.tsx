@@ -67,7 +67,15 @@ export const Input = ({
   );
 };
 
+Input.defaultProps = {
+  error: null,
+};
+
 Input.propTypes = {
   label: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onValueChange: PropTypes.func.isRequired,
+  error: PropTypes.string,
 };
