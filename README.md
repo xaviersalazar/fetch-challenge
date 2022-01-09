@@ -1,2 +1,5 @@
 # Fetch Rewards challenge
-Run the app with `yarn start`
+To run the app:
+   1. Clone the app
+   2. In the app folder, run `yarn install`
+   3. The run `yarn start`
